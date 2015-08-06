@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schedule>
+  <TimeP Sport="baseball" TimePeriod="Day3">
+    <game gameNumber="game1" gameCode="301">
+      <homeTeam>Washington</homeTeam>
+      <awayTeam>Miami</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game2" gameCode="302">
+      <homeTeam>Colorado</homeTeam>
+      <awayTeam>Arizona</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game3" gameCode="303">
+      <homeTeam>San Francisco</homeTeam>
+      <awayTeam>San Diego</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game4" gameCode="304">
+      <homeTeam>Pittsburgh</homeTeam>
+      <awayTeam>Cincinnati</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game5" gameCode="305">
+      <homeTeam>Toronto</homeTeam>
+      <awayTeam>NY Yankees</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game6" gameCode="306">
+      <homeTeam>Boston</homeTeam>
+      <awayTeam>Tampa Bay</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game7" gameCode="307">
+      <homeTeam>Atlanta</homeTeam>
+      <awayTeam>Philadelphia</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game8" gameCode="308">
+      <homeTeam>NY Mets</homeTeam>
+      <awayTeam>Baltimore</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game9" gameCode="309">
+      <homeTeam>Chicago White Sox</homeTeam>
+      <awayTeam>Detroit</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game10" gameCode="310">
+      <homeTeam>Kansas City</homeTeam>
+      <awayTeam>Cleveland</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game11" gameCode="311">
+      <homeTeam>Milwaukee</homeTeam>
+      <awayTeam>LA Dodgers</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game12" gameCode="312">
+      <homeTeam>Minnesota</homeTeam>
+      <awayTeam>Oakland</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game13" gameCode="313">
+      <homeTeam>Houston</homeTeam>
+      <awayTeam>Texas</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game14" gameCode="314">
+      <homeTeam>St. Louis</homeTeam>
+      <awayTeam>Chicago Cubs</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+    <game gameNumber="game15" gameCode="315">
+      <homeTeam>LA Angels</homeTeam>
+      <awayTeam>Seattle</awayTeam>
+      <startTime>12:03 PM</startTime>
+      <startDate>7/22/2015</startDate>
+      <gameTime />
+      <gameDate />
+      <displayStatus1 />
+      <displayStatus2 />
+      <status />
+    </game>
+  </TimeP>
+</schedule>

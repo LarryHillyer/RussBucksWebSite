@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score filetime="2:46 PM" filedate="6/17/2015" TimePeriod="Week1">
+  <game hometeam="steelers" awayteam="patriots">
+    <homescore>10</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="chiefs" awayteam="texans">
+    <homescore>21</homescore>
+    <awayscore>14</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="browns" awayteam="jets">
+    <homescore>10</homescore>
+    <awayscore>14</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="colts" awayteam="bills">
+    <homescore>28</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="dolphins" awayteam="redskins">
+    <homescore>14</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="panthers" awayteam="jaguars">
+    <homescore>17</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="rams" awayteam="titans">
+    <homescore>28</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="buccaneers" awayteam="bengals">
+    <homescore>14</homescore>
+    <awayscore>28</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="broncos" awayteam="cowboys">
+    <homescore>14</homescore>
+    <awayscore>28</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="eagles" awayteam="vikings">
+    <homescore>21</homescore>
+    <awayscore>17</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="49ners" awayteam="bears">
+    <homescore>28</homescore>
+    <awayscore>17</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="seahawks" awayteam="packers">
+    <homescore>28</homescore>
+    <awayscore>24</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="falcons" awayteam="saints">
+    <homescore>17</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="cardinals" awayteam="chargers">
+    <homescore>16</homescore>
+    <awayscore>20</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="lions" awayteam="giants">
+    <homescore>13</homescore>
+    <awayscore>17</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="ravens" awayteam="raiders">
+    <homescore>17</homescore>
+    <awayscore>10</awayscore>
+    <gametime>final</gametime>
+  </game>
+</score>

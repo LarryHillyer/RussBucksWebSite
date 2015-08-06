@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schedulefiles>
+  <file dayNumber="Week1">
+    <filepath>.\TestFiles\scheduleFile1football.xml</filepath>
+  </file>
+  <file dayNumber="Week2">
+    <filepath>.\TestFiles\scheduleFile2football.xml</filepath>
+  </file>
+  <file dayNumber="Week3">
+    <filepath>.\TestFiles\scheduleFile3football.xml</filepath>
+  </file>
+</schedulefiles>

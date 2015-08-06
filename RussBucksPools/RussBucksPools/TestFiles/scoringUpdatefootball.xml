@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score filetime="2:58 PM" filedate="6/17/2015" TimePeriod="Week3">
+  <game hometeam="lions" awayteam="chiefs">
+    <homescore>24</homescore>
+    <awayscore>28</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="steelers" awayteam="browns">
+    <homescore>20</homescore>
+    <awayscore>17</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="jets" awayteam="patriots">
+    <homescore>17</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="bengals" awayteam="dolphins">
+    <homescore>28</homescore>
+    <awayscore>24</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="colts" awayteam="jaguars">
+    <homescore>35</homescore>
+    <awayscore>17</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="chargers" awayteam="bills">
+    <homescore>24</homescore>
+    <awayscore>28</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="redskins" awayteam="buccaneers">
+    <homescore>21</homescore>
+    <awayscore>17</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="rams" awayteam="raiders">
+    <homescore>20</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="ravens" awayteam="titans">
+    <homescore>17</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="vikings" awayteam="saints">
+    <homescore>21</homescore>
+    <awayscore>24</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="broncos" awayteam="49ners">
+    <homescore>28</homescore>
+    <awayscore>24</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="bears" awayteam="cowboys">
+    <homescore>21</homescore>
+    <awayscore>20</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="eagles" awayteam="falcons">
+    <homescore>35</homescore>
+    <awayscore>28</awayscore>
+    <gametime>final</gametime>
+  </game>
+</score>

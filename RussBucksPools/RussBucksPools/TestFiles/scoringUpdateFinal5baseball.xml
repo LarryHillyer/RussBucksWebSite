@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score filetime="7:42 PM" filedate="7/1/2015" TimePeriod="Day5">
+  <game hometeam="NY Yankees" awayteam="Baltimore">
+    <homescore>6</homescore>
+    <awayscore>7</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Washington" awayteam="Atlanta">
+    <homescore>0</homescore>
+    <awayscore>2</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Philadelphia" awayteam="NY Mets">
+    <homescore>5</homescore>
+    <awayscore>3</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Pittsburgh" awayteam="St. Louis">
+    <homescore>4</homescore>
+    <awayscore>3</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Toronto" awayteam="Boston">
+    <homescore>1</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Detroit" awayteam="Kansas City">
+    <homescore>6</homescore>
+    <awayscore>5</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Cleveland" awayteam="Minnesota">
+    <homescore>1</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Tampa Bay" awayteam="Texas">
+    <homescore>3</homescore>
+    <awayscore>1</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Chicago White Sox" awayteam="Cincinnati">
+    <homescore>8</homescore>
+    <awayscore>6</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Milwaukee" awayteam="Chicago Cubs">
+    <homescore>2</homescore>
+    <awayscore>4</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Colorado" awayteam="LA Dodgers">
+    <homescore>3</homescore>
+    <awayscore>1</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Arizona" awayteam="San Diego">
+    <homescore>3</homescore>
+    <awayscore>1</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="LA Angels" awayteam="Houston">
+    <homescore>3</homescore>
+    <awayscore>1</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Seattle" awayteam="Oakland">
+    <homescore>3</homescore>
+    <awayscore>1</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="San Francisco" awayteam="Miami">
+    <homescore>3</homescore>
+    <awayscore>1</awayscore>
+    <gametime>final</gametime>
+  </game>
+</score>

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score filetime="2:40 PM" filedate="6/17/2015" TimePeriod="Week0">
+  <game hometeam="steelers" awayteam="patriots">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="chiefs" awayteam="texans">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="browns" awayteam="jets">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="colts" awayteam="bills">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="dolphins" awayteam="redskins">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="panthers" awayteam="jaguars">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="rams" awayteam="titans">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="buccaneers" awayteam="bengals">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="ravens" awayteam="raiders">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="broncos" awayteam="cowboys">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="eagles" awayteam="vikings">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="49ners" awayteam="bears">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="seahawks" awayteam="packers">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="falcons" awayteam="saints">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="cardinals" awayteam="chargers">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="lions" awayteam="giants">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+</score>

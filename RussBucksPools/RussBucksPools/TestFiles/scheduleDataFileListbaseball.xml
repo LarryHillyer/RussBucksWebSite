@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schedulefiles>
+  <file TimePeriod="Day1">
+    <filepath>.\TestFiles\scheduleFile1baseball.xml</filepath>
+  </file>
+  <file TimePeriod="Day3">
+    <filepath>.\TestFiles\scheduleFile3baseball.xml</filepath>
+  </file>
+  <file TimePeriod="Day5">
+    <filepath>.\TestFiles\scheduleFile5baseball.xml</filepath>
+  </file>
+</schedulefiles>

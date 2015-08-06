@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<schedule>
+  <TimeP TimePeriod="Week1" Sport="football">
+    <game gameNumber="game1">
+      <homeTeam>steelers</homeTeam>
+      <awayTeam>patriots</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game2">
+      <homeTeam>chiefs</homeTeam>
+      <awayTeam>texans</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game3">
+      <homeTeam>browns</homeTeam>
+      <awayTeam>jets</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game4">
+      <homeTeam>colts</homeTeam>
+      <awayTeam>bills</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game5">
+      <homeTeam>dolphins</homeTeam>
+      <awayTeam>redskins</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game6">
+      <homeTeam>panthers</homeTeam>
+      <awayTeam>jaguars</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game7">
+      <homeTeam>rams</homeTeam>
+      <awayTeam>titans</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game8">
+      <homeTeam>buccaneers</homeTeam>
+      <awayTeam>bengals</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game9">
+      <homeTeam>ravens</homeTeam>
+      <awayTeam>raiders</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game10">
+      <homeTeam>broncos</homeTeam>
+      <awayTeam>cowboys</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game11">
+      <homeTeam>eagles</homeTeam>
+      <awayTeam>vikings</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game12">
+      <homeTeam>49ners</homeTeam>
+      <awayTeam>bears</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game13">
+      <homeTeam>seahawks</homeTeam>
+      <awayTeam>packers</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game14">
+      <homeTeam>falcons</homeTeam>
+      <awayTeam>saints</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game15">
+      <homeTeam>cardinals</homeTeam>
+      <awayTeam>chargers</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+    <game gameNumber="game16">
+      <homeTeam>lions</homeTeam>
+      <awayTeam>giants</awayTeam>
+      <startTime>2:43 PM</startTime>
+      <startDate>6/17/2015</startDate>
+    </game>
+  </TimeP>
+</schedule>

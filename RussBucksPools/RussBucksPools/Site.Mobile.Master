@@ -1,0 +1,70 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site.Mobile.master.vb" Inherits="RussBucksPools.Site_Mobile" %>
+
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+<%@ Import Namespace="RussBucksPools" %>
+<%@ Import Namespace="Microsoft.AspNet.Identity" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" >
+<head id="Head1" runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+    <div>
+        <h2 class="pageTitle">RussBucks Pools</h2> <!--<asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />-->
+        <asp:LoginView runat="server" ViewStateMode="Disabled">
+           <AnonymousTemplate>             
+              <a runat="server" href="~/Account/Register">Register</a>&nbsp;&nbsp;
+              <a runat="server" href="~/Account/Login">Log in</a>                  
+           </AnonymousTemplate>
+           <LoggedInTemplate>              
+              <a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName%>!</a></li>
+              <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" /></li>                      
+          </LoggedInTemplate>
+        </asp:LoginView><br /><br />
+
+
+        <div class="container1 clearfix">
+          <div class="body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" >              
+            </asp:ContentPlaceHolder>
+          </div>
+
+          <div class="side-content">
+            <asp:ContentPlaceHolder ID="SideContent" runat="server">
+            </asp:ContentPlaceHolder>
+          </div>
+        </div>
+        <a runat="server" href="~/JoinPool/MyPools.aspx">MY Pools</a>&nbsp;
+        <a runat="server" href="~/JoinPool/Default.aspx">Join Pool</a><br />
+        <asp:HyperLink  ID="administration1" runat="server" NavigateUrl="~/Administration/TestDriver.aspx" >Administration</asp:HyperLink> 
+
+
+        <footer class="footer">
+                <p class="post-footer">&copy; <%: DateTime.Now.Year %> - A Liquid Code Application</p>
+        </footer>
+        <br />
+
+
+
+
+    &nbsp;<friendlyUrls:ViewSwitcher ID="ViewSwitcher1" runat="server" />
+    </div>
+        <style type="text/css">
+
+            .pageTitle {background-image:linear-gradient(#4519b,#044687,60%,#033769);background-color:#033c73;border-color:#022f5a;
+                        color:white;font-family:'Comic Sans MS';font-size: 28px;}
+
+             .clearfix::before {content: " ";display: table;}
+             .clearfix::after {clear:both;}
+             .clearfix {*zoom:1;}
+
+        </style>
+    </form>
+</body>
+</html>
+

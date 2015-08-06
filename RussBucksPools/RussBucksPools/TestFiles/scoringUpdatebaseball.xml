@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score filetime="11:15 PM" filedate="7/21/2015" TimePeriod="Day0">
+  <game hometeam="Washington" awayteam="Miami">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Toronto" awayteam="NY Yankees">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Boston" awayteam="Tampa Bay">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Atlanta" awayteam="Philadelphia">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Milwaukee" awayteam="LA Dodgers">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Minnesota" awayteam="Oakland">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Houston" awayteam="Texas">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="St. Louis" awayteam="Chicago Cubs">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="Colorado" awayteam="Arizona">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="LA Angels" awayteam="Seattle">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="San Francisco" awayteam="San Diego">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+</score>

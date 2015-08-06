@@ -1,0 +1,919 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CD8E53D2-B177-494B-AE08-1CEEF98E43D7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RussBucksPools</RootNamespace>
+    <AssemblyName>RussBucksPools</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>WebForms_Basic.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.2.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.bootstrap">
+      <HintPath>..\packages\AspNet.ScriptManager.bootstrap.3.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="AspNet.ScriptManager.jQuery">
+      <HintPath>..\packages\AspNet.ScriptManager.jQuery.1.10.2\lib\net45\AspNet.ScriptManager.jQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.MSAjax">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.MSAjax.5.0.0\lib\net45\Microsoft.ScriptManager.MSAjax.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ScriptManager.WebForms">
+      <HintPath>..\packages\Microsoft.AspNet.ScriptManager.WebForms.5.0.0\lib\net45\Microsoft.ScriptManager.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <Private>True</Private>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Web.Optimization.WebForms">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.WebForms.1.1.3\lib\net45\Microsoft.AspNet.Web.Optimization.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.FriendlyUrls">
+      <HintPath>..\packages\Microsoft.AspNet.FriendlyUrls.Core.1.0.2\lib\net45\Microsoft.AspNet.FriendlyUrls.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.2.0.0\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Facebook">
+      <HintPath>..\packages\Microsoft.Owin.Security.Facebook.3.0.0\lib\net45\Microsoft.Owin.Security.Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Google">
+      <HintPath>..\packages\Microsoft.Owin.Security.Google.3.0.0\lib\net45\Microsoft.Owin.Security.Google.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Twitter">
+      <HintPath>..\packages\Microsoft.Owin.Security.Twitter.3.0.0\lib\net45\Microsoft.Owin.Security.Twitter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.MicrosoftAccount">
+      <HintPath>..\packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.0\lib\net45\Microsoft.Owin.Security.MicrosoftAccount.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.Routing" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\AddPhoneNumber.aspx" />
+    <Content Include="Account\Confirm.aspx" />
+    <Content Include="Account\Eula.aspx" />
+    <Content Include="Account\Forgot.aspx" />
+    <Content Include="Account\Lockout.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Manage.aspx" />
+    <Content Include="Account\ManageLogins.aspx" />
+    <Content Include="Account\ManagePassword.aspx" />
+    <Content Include="Account\OpenAuthProviders.ascx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Account\RegisterExternalLogin.aspx" />
+    <Content Include="Account\ResetPassword.aspx" />
+    <Content Include="Account\ResetPasswordConfirmation.aspx" />
+    <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
+    <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="Administration\BarPoolList.aspx" />
+    <Content Include="Administration\CreateAppFolders.aspx" />
+    <Content Include="Administration\CreateFTPFiles.aspx" />
+    <Content Include="Administration\CreatePoolAdministrator.aspx" />
+    <Content Include="Administration\CreateScheduleFileList.aspx" />
+    <Content Include="Administration\CreateSuperUser.aspx" />
+    <Content Include="Administration\DeleteAppFolders.aspx" />
+    <Content Include="Administration\DeletePoolParameters.aspx" />
+    <Content Include="Administration\LoadBarPools.aspx" />
+    <Content Include="Administration\LoadMembersTable.aspx" />
+    <Content Include="Administration\LoadPoolAdminstrators.aspx" />
+    <Content Include="Administration\PoolAdministratorList.aspx" />
+    <Content Include="Administration\CreatePoolParameters.aspx" />
+    <Content Include="Administration\TestDriver.aspx" />
+    <Content Include="Administration\WriteMembershipTable.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="JoinPool\Administration\DeleteUser.aspx" />
+    <Content Include="JoinPool\InactivePool.aspx" />
+    <Content Include="JoinPool\JoinPool.aspx" />
+    <Content Include="JoinPool\JoinLoserPool.aspx" />
+    <Content Include="JoinPool\JoinPlayoffPool.aspx" />
+    <Content Include="JoinPool\MyPools.aspx" />
+    <Content Include="LosersPool\Administration\ChangeUserPick.aspx" />
+    <Content Include="LosersPool\Administration\ChangeUserPick2.aspx" />
+    <Content Include="LosersPool\CompletedDayResults.aspx" />
+    <Content Include="LosersPool\ContenderConfirmation.aspx" />
+    <Content Include="LosersPool\DisplayStandings.aspx" />
+    <Content Include="LosersPool\LoserPoolHome.aspx" />
+    <Content Include="LosersPool\NoPreseasonStandings.aspx" />
+    <Content Include="LosersPool\SeasonEnd.aspx" />
+    <Content Include="LosersPool\UpdateNotReady.aspx" />
+    <Content Include="LosersPool\WeeklyLoserPoolUserEntry.aspx" />
+    <Content Include="LosersPool\WeeklyScoringUpdate.aspx" />
+    <Content Include="MLB ICONS\Arizona Label.png" />
+    <Content Include="MLB ICONS\Arizona.png" />
+    <Content Include="MLB ICONS\Atlanta Label.png" />
+    <Content Include="MLB ICONS\Atlanta.png" />
+    <Content Include="MLB ICONS\Baltimore Label.png" />
+    <Content Include="MLB ICONS\Baltimore.png" />
+    <Content Include="MLB ICONS\Boston Label.png" />
+    <Content Include="MLB ICONS\Boston.png" />
+    <Content Include="MLB ICONS\Chicago Cubs Label.png" />
+    <Content Include="MLB ICONS\Chicago Cubs.png" />
+    <Content Include="MLB ICONS\Chicago White Sox Label.png" />
+    <Content Include="MLB ICONS\Chicago White Sox.png" />
+    <Content Include="MLB ICONS\Cincinnati Label.png" />
+    <Content Include="MLB ICONS\Cincinnati.png" />
+    <Content Include="MLB ICONS\Cleveland Label.png" />
+    <Content Include="MLB ICONS\Cleveland.png" />
+    <Content Include="MLB ICONS\Colorado Label.png" />
+    <Content Include="MLB ICONS\Colorado.png" />
+    <Content Include="MLB ICONS\Detroit Label.png" />
+    <Content Include="MLB ICONS\Detroit.png" />
+    <Content Include="MLB ICONS\Houston Label.png" />
+    <Content Include="MLB ICONS\Houston.png" />
+    <Content Include="MLB ICONS\Kansas City Label.png" />
+    <Content Include="MLB ICONS\Kansas City.png" />
+    <Content Include="MLB ICONS\LA Angels Label.png" />
+    <Content Include="MLB ICONS\LA Angels.png" />
+    <Content Include="MLB ICONS\LA Dodgers Label.png" />
+    <Content Include="MLB ICONS\LA Dodgers.png" />
+    <Content Include="MLB ICONS\Miami Label.png" />
+    <Content Include="MLB ICONS\Miami.png" />
+    <Content Include="MLB ICONS\Milwaukee Label.png" />
+    <Content Include="MLB ICONS\Milwaukee.png" />
+    <Content Include="MLB ICONS\Minnesota Label.png" />
+    <Content Include="MLB ICONS\Minnesota.png" />
+    <Content Include="MLB ICONS\NY Mets Label.png" />
+    <Content Include="MLB ICONS\NY Mets.png" />
+    <Content Include="MLB ICONS\NY Yankees Label.png" />
+    <Content Include="MLB ICONS\NY Yankees.png" />
+    <Content Include="MLB ICONS\Oakland Label.png" />
+    <Content Include="MLB ICONS\Oakland.png" />
+    <Content Include="MLB ICONS\Philadelphia Label.png" />
+    <Content Include="MLB ICONS\Philadelphia.png" />
+    <Content Include="MLB ICONS\Pittsburgh Label.png" />
+    <Content Include="MLB ICONS\Pittsburgh.png" />
+    <Content Include="MLB ICONS\San Diego Label.png" />
+    <Content Include="MLB ICONS\San Diego.png" />
+    <Content Include="MLB ICONS\San Francisco Label.png" />
+    <Content Include="MLB ICONS\San Francisco.png" />
+    <Content Include="MLB ICONS\Seattle Label.png" />
+    <Content Include="MLB ICONS\Seattle.png" />
+    <Content Include="MLB ICONS\St. Louis Label.png" />
+    <Content Include="MLB ICONS\St. Louis.png" />
+    <Content Include="MLB ICONS\Tampa Bay Label.png" />
+    <Content Include="MLB ICONS\Tampa Bay.png" />
+    <Content Include="MLB ICONS\Texas Label.png" />
+    <Content Include="MLB ICONS\Texas.png" />
+    <Content Include="MLB ICONS\Toronto Label.png" />
+    <Content Include="MLB ICONS\Toronto.png" />
+    <Content Include="MLB ICONS\Washington Label.png" />
+    <Content Include="MLB ICONS\Washington.png" />
+    <Content Include="Models\RadioButtonImages\Checked.png" />
+    <Content Include="Models\RadioButtonImages\Unchecked.png" />
+    <Content Include="NFL ICONS\Bears Label.png" />
+    <Content Include="NFL ICONS\Bears.png" />
+    <Content Include="NFL ICONS\Bengals Label.png" />
+    <Content Include="NFL ICONS\Bengals.png" />
+    <Content Include="NFL ICONS\Bills Label.png" />
+    <Content Include="NFL ICONS\Bills.png" />
+    <Content Include="NFL ICONS\Broncos Label.png" />
+    <Content Include="NFL ICONS\Broncos.png" />
+    <Content Include="NFL ICONS\Browns Label.png" />
+    <Content Include="NFL ICONS\Browns.png" />
+    <Content Include="NFL ICONS\Buccaneers Label.png" />
+    <Content Include="NFL ICONS\Buccaneers.png" />
+    <Content Include="NFL ICONS\Cardinals Label.png" />
+    <Content Include="NFL ICONS\Cardinals.png" />
+    <Content Include="NFL ICONS\Chargers Label.png" />
+    <Content Include="NFL ICONS\Chargers.png" />
+    <Content Include="NFL ICONS\Chiefs Label.png" />
+    <Content Include="NFL ICONS\Chiefs.png" />
+    <Content Include="NFL ICONS\Colts Label.png" />
+    <Content Include="NFL ICONS\Colts.png" />
+    <Content Include="NFL ICONS\Cowboys Label.png" />
+    <Content Include="NFL ICONS\Cowboys.png" />
+    <Content Include="NFL ICONS\Dolphins Label.png" />
+    <Content Include="NFL ICONS\Dolphins.png" />
+    <Content Include="NFL ICONS\Eagles Label.png" />
+    <Content Include="NFL ICONS\Eagles.png" />
+    <Content Include="NFL ICONS\Falcons Label.png" />
+    <Content Include="NFL ICONS\Falcons.png" />
+    <Content Include="NFL ICONS\Giants Label.png" />
+    <Content Include="NFL ICONS\Giants.png" />
+    <Content Include="NFL ICONS\Jaguars Label.png" />
+    <Content Include="NFL ICONS\Jaguars.png" />
+    <Content Include="NFL ICONS\Jets Label.png" />
+    <Content Include="NFL ICONS\Jets.png" />
+    <Content Include="NFL ICONS\Lions Label.png" />
+    <Content Include="NFL ICONS\Lions.png" />
+    <Content Include="NFL ICONS\Packers Label.png" />
+    <Content Include="NFL ICONS\Packers.png" />
+    <Content Include="NFL ICONS\Panthers Label.png" />
+    <Content Include="NFL ICONS\Panthers.png" />
+    <Content Include="NFL ICONS\Patriots Label.png" />
+    <Content Include="NFL ICONS\Patriots.png" />
+    <Content Include="NFL ICONS\Raiders Label.png" />
+    <Content Include="NFL ICONS\Raiders.png" />
+    <Content Include="NFL ICONS\Rams Label.png" />
+    <Content Include="NFL ICONS\Rams.png" />
+    <Content Include="NFL ICONS\Ravens Label.png" />
+    <Content Include="NFL ICONS\Ravens.png" />
+    <Content Include="NFL ICONS\Redskins Label.png" />
+    <Content Include="NFL ICONS\Redskins.png" />
+    <Content Include="NFL ICONS\Saints Label.png" />
+    <Content Include="NFL ICONS\Saints.png" />
+    <Content Include="NFL ICONS\Seahawks Label.png" />
+    <Content Include="NFL ICONS\Seahawks.png" />
+    <Content Include="NFL ICONS\Steelers Label.png" />
+    <Content Include="NFL ICONS\Steelers.png" />
+    <Content Include="NFL ICONS\Texans Label.png" />
+    <Content Include="NFL ICONS\Texans.png" />
+    <Content Include="NFL ICONS\Titans Label.png" />
+    <Content Include="NFL ICONS\Titans.png" />
+    <Content Include="NFL ICONS\Vikings Label.png" />
+    <Content Include="NFL ICONS\Vikings.png" />
+    <Content Include="NFL ICONS\_49ners Label.png" />
+    <Content Include="NFL ICONS\_49ners.png" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Account\Web.config" />
+    <Content Include="LosersPool\Web.config" />
+    <Content Include="JoinPool\Web.config" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="PlayoffPool\Default.aspx" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\WebForms\DetailsView.js" />
+    <Content Include="Scripts\WebForms\Focus.js" />
+    <Content Include="Scripts\WebForms\GridView.js" />
+    <Content Include="Scripts\WebForms\Menu.js" />
+    <Content Include="Scripts\WebForms\MenuStandards.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
+    <Content Include="Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
+    <Content Include="Scripts\WebForms\SmartNav.js" />
+    <Content Include="Scripts\WebForms\TreeView.js" />
+    <Content Include="Scripts\WebForms\WebForms.js" />
+    <Content Include="Scripts\WebForms\WebParts.js" />
+    <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Default.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Bundle.config" />
+    <None Include="Project_Readme.html" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AddPhoneNumber.aspx.designer.vb">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AddPhoneNumber.aspx.vb">
+      <DependentUpon>AddPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.designer.vb">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Confirm.aspx.vb">
+      <DependentUpon>Confirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Eula.aspx.designer.vb">
+      <DependentUpon>Eula.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Eula.aspx.vb">
+      <DependentUpon>Eula.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.designer.vb">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Forgot.aspx.vb">
+      <DependentUpon>Forgot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.designer.vb">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Lockout.aspx.vb">
+      <DependentUpon>Lockout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.vb">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.designer.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Manage.aspx.vb">
+      <DependentUpon>Manage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.designer.vb">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManageLogins.aspx.vb">
+      <DependentUpon>ManageLogins.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.designer.vb">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ManagePassword.aspx.vb">
+      <DependentUpon>ManagePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.designer.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\OpenAuthProviders.ascx.vb">
+      <DependentUpon>OpenAuthProviders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.designer.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\RegisterExternalLogin.aspx.vb">
+      <DependentUpon>RegisterExternalLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.designer.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPassword.aspx.vb">
+      <DependentUpon>ResetPassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.designer.vb">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ResetPasswordConfirmation.aspx.vb">
+      <DependentUpon>ResetPasswordConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.designer.vb">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\TwoFactorAuthenticationSignIn.aspx.vb">
+      <DependentUpon>TwoFactorAuthenticationSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.designer.vb">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\VerifyPhoneNumber.aspx.vb">
+      <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\BarPoolList.aspx.designer.vb">
+      <DependentUpon>BarPoolList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\BarPoolList.aspx.vb">
+      <DependentUpon>BarPoolList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CreateAppFolders.aspx.designer.vb">
+      <DependentUpon>CreateAppFolders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CreateAppFolders.aspx.vb">
+      <DependentUpon>CreateAppFolders.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CreateFTPFiles.aspx.designer.vb">
+      <DependentUpon>CreateFTPFiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CreateFTPFiles.aspx.vb">
+      <DependentUpon>CreateFTPFiles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CreatePoolAdministrator.aspx.designer.vb">
+      <DependentUpon>CreatePoolAdministrator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CreatePoolAdministrator.aspx.vb">
+      <DependentUpon>CreatePoolAdministrator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CreateScheduleFileList.aspx.designer.vb">
+      <DependentUpon>CreateScheduleFileList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CreateScheduleFileList.aspx.vb">
+      <DependentUpon>CreateScheduleFileList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CreateSuperUser.aspx.designer.vb">
+      <DependentUpon>CreateSuperUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CreateSuperUser.aspx.vb">
+      <DependentUpon>CreateSuperUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\DeleteAppFolders.aspx.designer.vb">
+      <DependentUpon>DeleteAppFolders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\DeleteAppFolders.aspx.vb">
+      <DependentUpon>DeleteAppFolders.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administration\DeletePoolParameters.aspx.designer.vb">
+      <DependentUpon>DeletePoolParameters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\DeletePoolParameters.aspx.vb">
+      <DependentUpon>DeletePoolParameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\LoadBarPools.aspx.designer.vb">
+      <DependentUpon>LoadBarPools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\LoadBarPools.aspx.vb">
+      <DependentUpon>LoadBarPools.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administration\LoadMembersTable.aspx.designer.vb">
+      <DependentUpon>LoadMembersTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\LoadMembersTable.aspx.vb">
+      <DependentUpon>LoadMembersTable.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administration\LoadPoolAdminstrators.aspx.designer.vb">
+      <DependentUpon>LoadPoolAdminstrators.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\LoadPoolAdminstrators.aspx.vb">
+      <DependentUpon>LoadPoolAdminstrators.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administration\PoolAdministratorList.aspx.designer.vb">
+      <DependentUpon>PoolAdministratorList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\PoolAdministratorList.aspx.vb">
+      <DependentUpon>PoolAdministratorList.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Administration\CreatePoolParameters.aspx.designer.vb">
+      <DependentUpon>CreatePoolParameters.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\CreatePoolParameters.aspx.vb">
+      <DependentUpon>CreatePoolParameters.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\TestDriver.aspx.designer.vb">
+      <DependentUpon>TestDriver.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\TestDriver.aspx.vb">
+      <DependentUpon>TestDriver.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administration\WriteMembershipTable.aspx.designer.vb">
+      <DependentUpon>WriteMembershipTable.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Administration\WriteMembershipTable.aspx.vb">
+      <DependentUpon>WriteMembershipTable.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\BundleConfig.vb" />
+    <Compile Include="App_Start\IdentityConfig.vb" />
+    <Compile Include="App_Start\RouteConfig.vb" />
+    <Compile Include="About.aspx.designer.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.vb">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="App_Start\Startup.Auth.vb" />
+    <Compile Include="Contact.aspx.designer.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.vb">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="JoinPool\Administration\DeleteUser.aspx.designer.vb">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinPool\Administration\DeleteUser.aspx.vb">
+      <DependentUpon>DeleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoinPool\InactivePool.aspx.designer.vb">
+      <DependentUpon>InactivePool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinPool\InactivePool.aspx.vb">
+      <DependentUpon>InactivePool.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="JoinPool\JoinPool.aspx.designer.vb">
+      <DependentUpon>JoinPool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinPool\JoinPool.aspx.vb">
+      <DependentUpon>JoinPool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoinPool\JoinLoserPool.aspx.designer.vb">
+      <DependentUpon>JoinLoserPool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinPool\JoinLoserPool.aspx.vb">
+      <DependentUpon>JoinLoserPool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoinPool\JoinPlayoffPool.aspx.designer.vb">
+      <DependentUpon>JoinPlayoffPool.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinPool\JoinPlayoffPool.aspx.vb">
+      <DependentUpon>JoinPlayoffPool.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JoinPool\Models\licensee.vb" />
+    <Compile Include="JoinPool\Models\MLBScheduledGame.vb" />
+    <Compile Include="JoinPool\Models\Pool.vb" />
+    <Compile Include="JoinPool\Models\PoolAdministrator.vb" />
+    <Compile Include="JoinPool\Models\PoolAlias.vb" />
+    <Compile Include="JoinPool\Models\PoolDbContext.vb" />
+    <Compile Include="JoinPool\Models\PoolParameter.vb" />
+    <Compile Include="JoinPool\Models\Sport.vb" />
+    <Compile Include="JoinPool\Models\Team.vb" />
+    <Compile Include="JoinPool\Models\Test.vb" />
+    <Compile Include="JoinPool\MyPools.aspx.designer.vb">
+      <DependentUpon>MyPools.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JoinPool\MyPools.aspx.vb">
+      <DependentUpon>MyPools.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\Administration\ChangeUserPick.aspx.designer.vb">
+      <DependentUpon>ChangeUserPick.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\Administration\ChangeUserPick.aspx.vb">
+      <DependentUpon>ChangeUserPick.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\Administration\ChangeUserPick2.aspx.designer.vb">
+      <DependentUpon>ChangeUserPick2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\Administration\ChangeUserPick2.aspx.vb">
+      <DependentUpon>ChangeUserPick2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\CompletedDayResults.aspx.designer.vb">
+      <DependentUpon>CompletedDayResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\CompletedDayResults.aspx.vb">
+      <DependentUpon>CompletedDayResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\ContenderConfirmation.aspx.designer.vb">
+      <DependentUpon>ContenderConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\ContenderConfirmation.aspx.vb">
+      <DependentUpon>ContenderConfirmation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\DisplayStandings.aspx.designer.vb">
+      <DependentUpon>DisplayStandings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\DisplayStandings.aspx.vb">
+      <DependentUpon>DisplayStandings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\Logic\ContenderStatus.vb" />
+    <Compile Include="LosersPool\LoserPoolHome.aspx.designer.vb">
+      <DependentUpon>LoserPoolHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\LoserPoolHome.aspx.vb">
+      <DependentUpon>LoserPoolHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\Models\ByeTeam.vb" />
+    <Compile Include="LosersPool\Models\Loser.vb" />
+    <Compile Include="LosersPool\Models\LosersPoolContext.vb" />
+    <Compile Include="LosersPool\Models\MyPick.vb" />
+    <Compile Include="LosersPool\Models\ScheduleEntity.vb" />
+    <Compile Include="LosersPool\Models\ScheduleTimePeriod.vb" />
+    <Compile Include="LosersPool\Models\ScoringUpdate.vb" />
+    <Compile Include="LosersPool\Models\User.vb" />
+    <Compile Include="LosersPool\NoPreseasonStandings.aspx.designer.vb">
+      <DependentUpon>NoPreseasonStandings.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\NoPreseasonStandings.aspx.vb">
+      <DependentUpon>NoPreseasonStandings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\SeasonEnd.aspx.designer.vb">
+      <DependentUpon>SeasonEnd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\SeasonEnd.aspx.vb">
+      <DependentUpon>SeasonEnd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\UpdateNotReady.aspx.designer.vb">
+      <DependentUpon>UpdateNotReady.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\UpdateNotReady.aspx.vb">
+      <DependentUpon>UpdateNotReady.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\WeeklyLoserPoolUserEntry.aspx.designer.vb">
+      <DependentUpon>WeeklyLoserPoolUserEntry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\WeeklyLoserPoolUserEntry.aspx.vb">
+      <DependentUpon>WeeklyLoserPoolUserEntry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LosersPool\WeeklyScoringUpdate.aspx.designer.vb">
+      <DependentUpon>WeeklyScoringUpdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LosersPool\WeeklyScoringUpdate.aspx.vb">
+      <DependentUpon>WeeklyScoringUpdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Models\IdentityModels.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PlayoffPool\Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayoffPool\Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlayoffPool\Models\PlayoffPoolContext.vb" />
+    <Compile Include="PlayoffPool\Models\playoffPoolUser.vb" />
+    <Compile Include="PlayoffPool\Models\User.vb" />
+    <Compile Include="Site.Master.designer.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.vb">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Startup.vb" />
+    <Compile Include="ViewSwitcher.ascx.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewSwitcher.ascx.designer.vb">
+      <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Mobile.Master.designer.vb">
+      <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Site.Master" />
+    <Content Include="Site.Mobile.Master" />
+    <Content Include="ViewSwitcher.ascx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="LosersPool\Models\Excluded Code\" />
+    <Folder Include="TestFiles\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52132</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52132/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

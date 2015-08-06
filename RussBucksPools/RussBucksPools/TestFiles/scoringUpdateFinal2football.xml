@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<score filetime="2:52 PM" filedate="6/17/2015" TimePeriod="Week2">
+  <game hometeam="chiefs" awayteam="steelers">
+    <homescore>17</homescore>
+    <awayscore>14</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="jets" awayteam="texans">
+    <homescore>10</homescore>
+    <awayscore>14</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="patriots" awayteam="lions">
+    <homescore>24</homescore>
+    <awayscore>28</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="dolphins" awayteam="colts">
+    <homescore>21</homescore>
+    <awayscore>28</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="jaguars" awayteam="redskins">
+    <homescore>13</homescore>
+    <awayscore>10</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="bills" awayteam="panthers">
+    <homescore>21</homescore>
+    <awayscore>17</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="buccaneers" awayteam="rams">
+    <homescore>10</homescore>
+    <awayscore>17</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="ravens" awayteam="bengals">
+    <homescore>21</homescore>
+    <awayscore>28</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="titans" awayteam="raiders">
+    <homescore>14</homescore>
+    <awayscore>10</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="eagles" awayteam="browns">
+    <homescore>24</homescore>
+    <awayscore>28</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="bears" awayteam="vikings">
+    <homescore>17</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="cowboys" awayteam="49ners">
+    <homescore>20</homescore>
+    <awayscore>21</awayscore>
+    <gametime>final</gametime>
+  </game>
+  <game hometeam="falcons" awayteam="seahawks">
+    <homescore>0</homescore>
+    <awayscore>0</awayscore>
+    <gametime>final</gametime>
+  </game>
+</score>
