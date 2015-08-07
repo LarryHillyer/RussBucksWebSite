@@ -15,22 +15,25 @@
     <form id="form1" runat="server">
 
     <div>
-        <h2 class="pageTitle">RussBucks Pools</h2> <!--<asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />-->
+        <h2 class="pageTitle">RussBucks Pools</h2> 
         <asp:LoginView runat="server" ViewStateMode="Disabled">
            <AnonymousTemplate>             
               <a runat="server" href="~/Account/Register">Register</a>&nbsp;&nbsp;
-              <a runat="server" href="~/Account/Login">Log in</a>                  
+              <a runat="server" href="~/Account/Login">Log in</a>
+                                 
            </AnonymousTemplate>
            <LoggedInTemplate>              
               <a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName%>!</a></li>
-              <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" /></li>                      
+              <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Log off" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" /></li>                    
           </LoggedInTemplate>
         </asp:LoginView><br /><br />
+        <a runat="server" href="~/JoinPool/MyPools.aspx">MY Pools</a>&nbsp;
+        <a runat="server" href="~/JoinPool/Default.aspx">Join Pool</a><br /><br />                          
 
 
         <div class="container1 clearfix">
           <div class="body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server" >              
+            <asp:ContentPlaceHolder ID="MainContent" runat="server" > 
             </asp:ContentPlaceHolder>
           </div>
 
@@ -39,8 +42,8 @@
             </asp:ContentPlaceHolder>
           </div>
         </div>
-        <a runat="server" href="~/JoinPool/MyPools.aspx">MY Pools</a>&nbsp;
-        <a runat="server" href="~/JoinPool/Default.aspx">Join Pool</a><br />
+
+
         <asp:HyperLink  ID="administration1" runat="server" NavigateUrl="~/Administration/TestDriver.aspx" >Administration</asp:HyperLink> 
 
 

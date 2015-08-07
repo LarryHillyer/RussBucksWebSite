@@ -125,7 +125,7 @@ Public Class ChangeUserPick2
         Dim newPick = nP(0)
 
         Dim changeUser = CStr(Session("changeUser"))
-        Dim TimePeriod = CStr(Session("TimePeriod"))
+        Dim thisTimePeriod = CStr(Session("TimePeriod"))
         Dim poolAlias = CStr(Session("poolAlias"))
         Dim cronJobName = CStr(Session("cronJobName"))
 
@@ -150,31 +150,78 @@ Public Class ChangeUserPick2
 
 
                         Dim queryUserChoice = (From user1 In _dbLosersPool.UserChoicesList
-                                             Where user1.UserName = changeUser And user1.TimePeriod = TimePeriod _
+                                             Where user1.UserName = changeUser And user1.TimePeriod = thisTimePeriod _
                                              And user1.PoolAlias = poolAlias And user1.CronJob = cronJobName).Single
 
-                        Dim queryUserPicks = (From user1 In _dbLosersPool.UserPicks
-                                              Where user1.PoolAlias = poolAlias And user1.CronJobName = cronJobName _
-                                              And user1.UserPick1 = queryUserChoice.UserPick And user1.GameCode = queryUserChoice.PickedGameCode _
-                                              And user1.UserID = changeUser And user1.TimePeriod = TimePeriod).SingleOrDefault
+                        Dim queryUserPicks1 = (From user1 In _dbLosersPool.UserPicks
+                                                Where user1.PoolAlias = poolAlias And user1.CronJobName = cronJobName _
+                                                And user1.UserID = queryUserChoice.UserID And user1.TimePeriod = thisTimePeriod And user1.UserPickPostponed = False).SingleOrDefault
 
-                        If queryUserPicks Is Nothing Then
-                            Dim userPick1 As New UserPick
-                            userPick1.UserID = queryUserChoice.UserID
-                            userPick1.TimePeriod = TimePeriod
-                            userPick1.PoolAlias = poolAlias
-                            userPick1.CronJobName = cronJobName
-                            userPick1.UserPick1 = newPick
-                            userPick1.GameCode = queryMyPicks.PossibleTeamGameCode
-                            userPick1.UserPickPostponed = False
+                        Dim querySchedule = (From game1 In _dbLosersPool.ScheduleEntities
+                                             Where game1.CronJob = cronJobName And game1.GameCode = queryMyPicks.PossibleTeamGameCode And game1.TimePeriod = thisTimePeriod).Single
 
-
-                            _dbLosersPool.UserPicks.Add(userPick1)
-
+                        If queryUserPicks1 Is Nothing Then
                         Else
-                            queryUserPicks.UserPick1 = newPick
-                            queryUserPicks.GameCode = queryMyPicks.PossibleTeamGameCode
+                            If queryUserPicks1 Is Nothing Then
+                            Else
+                                _dbLosersPool.UserPicks.Remove(queryUserPicks1)
+                                _dbLosersPool.SaveChanges()
+                            End If
+
                         End If
+
+                        Dim userPick1 As New UserPick
+                        userPick1.UserID = queryUserChoice.UserID
+                        userPick1.TimePeriod = thisTimePeriod
+                        userPick1.PoolAlias = poolAlias
+                        userPick1.CronJobName = cronJobName
+                        userPick1.UserPick1 = newPick
+                        userPick1.GameCode = queryMyPicks.PossibleTeamGameCode
+
+                        If CInt(querySchedule.HomeScore) > CInt(querySchedule.AwayScore) Then
+                            userPick1.PickIsTied = False
+                            If userPick1.UserPick1 = querySchedule.HomeTeam Then
+                                userPick1.PickIsWinning = False
+                            ElseIf userPick1.UserPick1 = querySchedule.AwayTeam Then
+                                userPick1.PickIsWinning = True
+                            End If
+                        ElseIf CInt(querySchedule.AwayScore) > CInt(querySchedule.HomeScore) Then
+                            userPick1.PickIsTied = False
+                            If userPick1.UserPick1 = querySchedule.HomeTeam Then
+                                userPick1.PickIsWinning = True
+                            ElseIf userPick1.UserPick1 = querySchedule.AwayTeam Then
+                                userPick1.PickIsWinning = False
+                            End If
+                        Else
+                            userPick1.PickIsTied = True
+                            userPick1.PickIsWinning = False
+                        End If
+
+                        userPick1.UserPickPostponed = False
+
+                        _dbLosersPool.UserPicks.Add(userPick1)
+
+                        Dim queryUserPicks2 = (From qUP2 In _dbLosersPool.UserPicks
+                                               Where qUP2.CronJobName = cronJobName And qUP2.PoolAlias = poolAlias And _
+                                               qUP2.UserID = queryUserChoice.UserID).ToList
+
+                        Dim userIsWinning = False
+                        Dim userIsTied = True
+
+                        For Each pick1 In queryUserPicks2
+                            If pick1.PickIsTied = True Then
+                            ElseIf pick1.PickIsWinning = True Then
+                                userIsTied = False
+                                userIsWinning = True
+                            ElseIf pick1.PickIsWinning = False Then
+                                userIsTied = False
+                                userIsWinning = False
+                                Exit For
+                            End If
+                        Next
+
+                        queryUserChoice.UserIsWinning = userIsWinning
+                        queryUserChoice.UserIsTied = userIsTied
 
                         Dim oldPick = queryUserChoice.UserPick
                         queryUserChoice.UserPick = newPick

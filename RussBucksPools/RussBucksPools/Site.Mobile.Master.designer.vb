@@ -41,15 +41,6 @@ Partial Public Class Site_Mobile
     Protected WithEvents form1 As Global.System.Web.UI.HtmlControls.HtmlForm
 
     '''<summary>
-    '''FeaturedContent control.
-    '''</summary>
-    '''<remarks>
-    '''Auto-generated field.
-    '''To modify move field declaration from designer file to code-behind file.
-    '''</remarks>
-    Protected WithEvents FeaturedContent As Global.System.Web.UI.WebControls.ContentPlaceHolder
-
-    '''<summary>
     '''MainContent control.
     '''</summary>
     '''<remarks>
