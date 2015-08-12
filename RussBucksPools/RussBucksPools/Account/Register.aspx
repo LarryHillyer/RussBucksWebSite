@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="Register" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Register.aspx.vb" Inherits="RussBucksPools.Register" %>
 
-<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
+
 
 <%@ Import Namespace="RussBucksPools" %>
 <%@ Import Namespace="Microsoft.AspNet.Identity" %>

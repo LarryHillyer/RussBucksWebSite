@@ -35,8 +35,13 @@ Partial Public Class Register
 
             Try
                 Using (_dbApp)
+
                     Dim queryFolders = (From folder1 In _dbApp.AppFolders).SingleOrDefault
-                    Session("rootFolder") = queryFolders.rootFolder
+
+                    If queryFolders Is Nothing Then
+                    Else
+                        Session("rootFolder") = queryFolders.rootFolder
+                    End If
 
 
                     Using (_dbPools)
@@ -59,7 +64,7 @@ Partial Public Class Register
                         SuperUser.SeedSuperUser()
 
                         Dim querySuperUser1 = (From user2 In _dbApp.SuperUsers
-                            Where user2.SuperUserName = userName).SingleOrDefault
+                            Where user2.SuperUserName = userId).SingleOrDefault
 
                         If querySuperUser1 Is Nothing Then
                             Response.Redirect("~/Account/EULA.aspx")
