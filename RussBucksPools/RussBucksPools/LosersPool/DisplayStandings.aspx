@@ -6,8 +6,8 @@
     <div id ="Contenders1" style=" text-align: center; vertical-align: middle;">
 
         <asp:Table ID="Contenders4" runat="server" GridLines="None" CssClass="Contenders2" CellPadding="-1" CellSpacing="-1">
-            <asp:TableHeaderRow Height="60px">
-                <asp:TableHeaderCell Id ="ContendersName" Width="120px">Contender's Name</asp:TableHeaderCell>
+            <asp:TableHeaderRow Height="60px" CssClass="r1">
+                <asp:TableHeaderCell ID ="ContendersName" Width="120px" CssClass="UserName1">Contender's Name</asp:TableHeaderCell>
                 <asp:TableHeaderCell ID ="Team1Label"     Width="15px"><asp:Image ID="Team1Label2"   runat="server" /></asp:TableHeaderCell>
                 <asp:TableHeaderCell ID ="Team2Label"     Width="15px"><asp:Image ID="Team2Label2"   runat="server" /></asp:TableHeaderCell>
                 <asp:TableHeaderCell ID ="Team3Label"     Width="15px"><asp:Image ID="Team3Label2"   runat="server" /></asp:TableHeaderCell>
@@ -43,8 +43,8 @@
             
             </asp:TableHeaderRow>
 
-            <asp:TableHeaderRow Height="15px">
-                <asp:TableHeaderCell Id ="ContendersName1" Width="120px"></asp:TableHeaderCell>
+            <asp:TableHeaderRow Height="15px" CssClass="IconRow">
+                <asp:TableHeaderCell Id ="ContendersName1" Width="120px" CssClass="UserName1"></asp:TableHeaderCell>
                 <asp:TableHeaderCell ID ="Team1Icon"       Width="15px"><asp:Image ID="Team1Icon2"   runat="server" /></asp:TableHeaderCell>
                 <asp:TableHeaderCell ID ="Team2Icon"       Width="15px"><asp:Image ID="Team2Icon2"   runat="server" /></asp:TableHeaderCell>
                 <asp:TableHeaderCell ID ="Team3Icon"       Width="15px"><asp:Image ID="Team3Icon2"   runat="server" /></asp:TableHeaderCell>
@@ -97,10 +97,13 @@
     <style type="text/css" >
         .LoserTable1 {  border-collapse: collapse; }    
         .LoserTable1 > tbody > tr > th, 
-        .LoserTable1 > tbody > tr > td { border: 1px ridge black; padding: 3px;text-align:center; font-size:9px;}
+        .LoserTable1 > tbody > tr > td { border: 1px ridge black; padding: 3px;text-align:center; font-size:7px;}
         .Contenders2 {  border-collapse: collapse; }    
-        .Contenders2 > tbody > tr > th, 
-        .Contenders2 > tbody > tr > td { border: 1px ridge black; max-width:23px;text-align:center;font-size:9px; }
-        .UserName1 { min-width:120px;}
+        .Contenders2 > tbody > .r1 > th, 
+        .Contenders2 > tbody > .r1 > td { border: 1px ridge black; max-width:23px;text-align:center;font-size:7px; }
+        .Contenders2 > tbody > .IconRow { max-height:15px}
+        .Contenders2 > tbody > .IconRow > th {border: 1px ridge black; max-width:23px;text-align:center;font-size:7px;}
+        .Contenders2 > tbody > .dRow1 > td {border: 1px ridge black;  font-size:7px;text-align:center;}
+        .UserName1 {border: 1px ridge black; min-width:120px; font-size:7px;text-align:center;}
     </style>
 </asp:Content>

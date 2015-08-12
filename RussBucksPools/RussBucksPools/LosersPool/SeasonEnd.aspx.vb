@@ -1035,7 +1035,7 @@ Public Class Season_End
                             dRow.Cells.Add(dCell33)
 
                         End If
-
+                        dRow.CssClass = "dRow1"
                         Contenders4.Rows.Add(dRow)
                     Next
 

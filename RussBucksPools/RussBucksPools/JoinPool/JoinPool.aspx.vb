@@ -211,10 +211,10 @@ Public Class JoinPool
 
                     _dbPools1.BarPoolList.Add(user1)
 
-                    Dim poolParam1 As New PoolParameter
-
                     Dim queryPool1 = (From pool1 In _dbPools1.Pools
-                                           Where pool1.Sport = Sport1.SelectedItem.Text And pool1.PoolName = Pools1.SelectedItem.Text).Single
+                       Where pool1.Sport = Sport1.SelectedItem.Text And pool1.PoolName = Pools1.SelectedItem.Text).Single
+
+                    Dim poolParam1 As New PoolParameter
 
                     poolParam1.timePeriodName = queryPool1.timePeriodName
                     poolParam1.timePeriodIncrement = queryPool1.timePeriodIncrement

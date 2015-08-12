@@ -7,7 +7,7 @@ Namespace PlayoffPool.Models
         Public Property playoffPoolUsers As DbSet(Of playoffPoolUser)
 
         Public Sub New()
-            MyBase.New("PlayoffPool-RussBucks-Test")
+            MyBase.New("RussBucks-PlayoffPool")
         End Sub
 
     End Class

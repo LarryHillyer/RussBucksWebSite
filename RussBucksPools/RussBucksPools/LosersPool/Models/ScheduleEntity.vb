@@ -37,7 +37,7 @@ Public Class ScheduleEntity
     Public Property WinningTeam As String
     Public Property IsHomeTeamWinning As Boolean
     Public Property AreTeamsTied As Boolean
-
+    Public Property seasonPhase As String
 End Class
 
 Public Class DeletedGame
@@ -69,6 +69,7 @@ Public Class DeletedGame
     Public Property WinningTeam As String
     Public Property IsHomeTeamWinning As Boolean
     Public Property AreTeamsTied As Boolean
+    Public Property seasonPhase As String
 
 End Class
 

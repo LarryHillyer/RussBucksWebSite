@@ -35,7 +35,7 @@ Namespace JoinPools.Models
 
                     pool1.PoolName = "LoserPool"
                     pool1.Sport = "baseball"
-                    pool1.timePeriodIncrement = "2"
+                    pool1.timePeriodIncrement = "1"
                     pool1.timePeriodName = "Day"
 
                     _dbPools2.Pools.Add(pool1)

@@ -40,7 +40,7 @@ Public Class ApplicationDbContext
     Public Property CurrentCronJobs As DbSet(Of CurrentCronJob)
 
     Public Sub New()
-        MyBase.New("Membership-RussBucks-Test", throwIfV1Schema:=False)
+        MyBase.New("RussBucks-Membership", throwIfV1Schema:=False)
     End Sub
     
     Public Shared Function Create As ApplicationDbContext
@@ -141,6 +141,7 @@ Public Class AppFolder
     Public Property rootFolder As String
     Public Property driverRootFolder As String
     Public Property scrapedFilesFolder As String
+    Public Property scrapedScheduleFilesFolder As String
     Public Property testCronJobFolder As String
     Public Property scheduleCronJobFolder As String
     Public Property scoreCronJobFolder As String
@@ -161,6 +162,7 @@ Public Class CronJob
     Public Property CronJobType As String
     Public Property CronJobNumber As String
     Public Property CronJobStartDateTime As String
+    Public Property CronJobIsPreseason As Boolean
 
 End Class
 

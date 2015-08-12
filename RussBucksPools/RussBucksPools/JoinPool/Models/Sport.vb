@@ -65,8 +65,13 @@ Public Class SeedSports
 
         End Try
     End Sub
+End Class
 
-
-
-
+Public Class SportDatesOfTheWeek
+    <Key>
+    Public Property DateId As Int32
+    Public Property Date1 As Date
+    Public Property WeekNumber As String
+    Public Property Sport As String
+    Public Property Phase As String
 End Class

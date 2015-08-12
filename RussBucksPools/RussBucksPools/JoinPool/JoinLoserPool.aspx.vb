@@ -83,56 +83,6 @@ Public Class JoinLoserPool
                                                Where user1.UserID = EName And user1.PoolAlias = poolAlias).ToList
 
                         If queryUserChoices.Count = 0 Then
-                            'Dim newUser2 As New UserChoices
-                            'newUser2.UserID = EName
-                            'newUser2.UserName = userName
-                            'newUser2.PoolAlias = poolAlias
-                            'newUser2.TimePeriod = queryPoolParam.timePeriodName + "0"
-                            'newUser2.Contender = True
-                            'newUser2.Team1Available = True
-                            'newUser2.Team2Available = True
-                            'newUser2.Team3Available = True
-                            'newUser2.Team4Available = True
-                            'newUser2.Team5Available = True
-                            'newUser2.Team6Available = True
-                            'newUser2.Team7Available = True
-                            'newUser2.Team8Available = True
-                            'newUser2.Team9Available = True
-                            'newUser2.Team10Available = True
-                            'newUser2.Team11Available = True
-                            'newUser2.Team12Available = True
-                            'newUser2.Team13Available = True
-                            'newUser2.Team14Available = True
-                            'newUser2.Team15Available = True
-                            'newUser2.Team16Available = True
-                            'newUser2.Team17Available = True
-                            'newUser2.Team18Available = True
-                            'newUser2.Team19Available = True
-                            'newUser2.Team20Available = True
-                            'newUser2.Team21Available = True
-                            'newUser2.Team22Available = True
-                            'newUser2.Team23Available = True
-                            'newUser2.Team24Available = True
-                            'newUser2.Team25Available = True
-                            'newUser2.Team26Available = True
-                            'newUser2.Team27Available = True
-                            'newUser2.Team28Available = True
-                            'newUser2.Team29Available = True
-                            'newUser2.Team30Available = True
-                            'newUser2.Team31Available = True
-                            'newUser2.Team32Available = True
-
-                            'newUser2.AdministrationPick = False
-                            'newUser2.Sport = queryPoolParam.Sport
-
-                            'If _dbLoserPool.UserChoicesList.Count = 0 Then
-                            'newUser2.ListId = 1
-                            ''Else
-                            'newUser2.ListId = _dbLoserPool.UserChoicesList.Count + 1
-                            'End If
-
-                            '_dbLoserPool.UserChoicesList.Add(newUser2)
-                            '_dbLoserPool.SaveChanges()
 
                             Dim newUser3 As New UserChoices
                             newUser3.UserID = EName
@@ -175,28 +125,16 @@ Public Class JoinLoserPool
 
                             newUser3.AdministrationPick = False
                             newUser3.Sport = queryPoolParam.Sport
+                            newUser3.UserIsTied = False
+                            newUser3.UserIsWinning = False
+                            newUser3.UserPickPostponed = False
+
 
                             _dbLoserPool.UserChoicesList.Add(newUser3)
                             _dbLoserPool.SaveChanges()
 
                         End If
 
-                        'Dim queryMyPools = (From mP1 In _dbPools.MyPools
-                        'Where mP1.EName = EName).SingleOrDefault
-
-                        'If queryMyPools Is Nothing Then
-                        ' Dim newuser1 As New MyPool
-                        'newuser1.EName = EName
-                        'newuser1.UserId = EName
-                        'newuser1.Loser = "LoserPool"
-                        '_dbPools.MyPools.Add(newuser1)
-                        '_dbPools.SaveChanges()
-                        'Else
-                        'queryMyPools.Loser = "LoserPool"
-                        '_dbPools.SaveChanges()
-                        'End If
-
-                        ' User joined Loser Pool
                         Response.Redirect("~/Default.aspx")
 
 

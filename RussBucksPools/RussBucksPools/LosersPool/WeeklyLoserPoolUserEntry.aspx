@@ -242,7 +242,7 @@
     <style type="text/css" >
         .GameTable {  border-collapse: collapse; }    
         .GameTable > tbody> tr > th, 
-        .GameTable > tbody> tr > td { border: 1px ridge black; max-width:23px;font-size:9px }
+        .GameTable > tbody> tr > td { border: 1px ridge black; max-width:23px;font-size:7px }
 
         .radioButton {max-width:15px;max-height:15px;margin:0px;padding:0px;}
 

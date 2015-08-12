@@ -40,10 +40,6 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit, Version=15.1.2.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\ASP.NET AJAX Control Toolkit\Bin\AjaxControlToolkit.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -689,8 +685,8 @@
       <DependentUpon>JoinPlayoffPool.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
+    <Compile Include="JoinPool\Models\ScheduledGame.vb" />
     <Compile Include="JoinPool\Models\licensee.vb" />
-    <Compile Include="JoinPool\Models\MLBScheduledGame.vb" />
     <Compile Include="JoinPool\Models\Pool.vb" />
     <Compile Include="JoinPool\Models\PoolAdministrator.vb" />
     <Compile Include="JoinPool\Models\PoolAlias.vb" />

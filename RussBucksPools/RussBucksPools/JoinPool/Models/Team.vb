@@ -341,7 +341,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team1"
-        t.TeamName = "bills"
+        t.TeamName = "Buffalo"
         t.NickName = "Bills"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Bills Label.png"
@@ -350,7 +350,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team2"
-        t.TeamName = "dolphins"
+        t.TeamName = "Miami"
         t.NickName = "Dolphins"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Dolphins Label.png"
@@ -359,7 +359,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team3"
-        t.TeamName = "patriots"
+        t.TeamName = "New England"
         t.NickName = "Patriots"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Patriots Label.png"
@@ -368,7 +368,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team4"
-        t.TeamName = "jets"
+        t.TeamName = "NY Jets"
         t.NickName = "Jets"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Jets Label.png"
@@ -377,7 +377,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team5"
-        t.TeamName = "ravens"
+        t.TeamName = "Baltimore"
         t.NickName = "Ravens"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Ravens Label.png"
@@ -386,7 +386,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team6"
-        t.TeamName = "bengals"
+        t.TeamName = "Cincinnati"
         t.NickName = "Bengals"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Bengals Label.png"
@@ -395,7 +395,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team7"
-        t.TeamName = "browns"
+        t.TeamName = "Cleveland"
         t.NickName = "Browns"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Browns Label.png"
@@ -404,7 +404,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team8"
-        t.TeamName = "steelers"
+        t.TeamName = "Pittsburgh"
         t.NickName = "Steelers"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Steelers Label.png"
@@ -413,7 +413,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team9"
-        t.TeamName = "texans"
+        t.TeamName = "Houston"
         t.NickName = "Texans"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Texans Label.png"
@@ -422,7 +422,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team10"
-        t.TeamName = "colts"
+        t.TeamName = "Indianapolis"
         t.Sport = "football"
         t.NickName = "Colts"
         t.TeamLabel = "~/NFL ICONS/Colts Label.png"
@@ -431,7 +431,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team11"
-        t.TeamName = "jaguars"
+        t.TeamName = "Jacksonville"
         t.NickName = "Jaguars"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Jaguars Label.png"
@@ -440,7 +440,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team12"
-        t.TeamName = "titans"
+        t.TeamName = "Tennessee"
         t.NickName = "Titans"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Titans Label.png"
@@ -449,7 +449,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team13"
-        t.TeamName = "broncos"
+        t.TeamName = "Denver"
         t.NickName = "Broncos"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Broncos Label.png"
@@ -458,7 +458,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team14"
-        t.TeamName = "chiefs"
+        t.TeamName = "Kansas City"
         t.NickName = "Chiefs"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Chiefs Label.png"
@@ -467,7 +467,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team15"
-        t.TeamName = "raiders"
+        t.TeamName = "Oakland"
         t.NickName = "Raiders"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Raiders Label.png"
@@ -476,7 +476,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team16"
-        t.TeamName = "chargers"
+        t.TeamName = "San Diego"
         t.NickName = "Chargers"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Chargers Label.png"
@@ -485,7 +485,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team17"
-        t.TeamName = "cowboys"
+        t.TeamName = "Dallas"
         t.NickName = "Cowboys"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Cowboys Label.png"
@@ -494,7 +494,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team18"
-        t.TeamName = "giants"
+        t.TeamName = "NY Giants"
         t.NickName = "Giants"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Giants Label.png"
@@ -503,7 +503,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team19"
-        t.TeamName = "eagles"
+        t.TeamName = "Philadelphia"
         t.NickName = "Eagles"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Eagles Label.png"
@@ -512,7 +512,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team20"
-        t.TeamName = "redskins"
+        t.TeamName = "Washington"
         t.NickName = "Redskins"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Redskins Label.png"
@@ -521,7 +521,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team21"
-        t.TeamName = "bears"
+        t.TeamName = "Chicago"
         t.NickName = "Bears"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Bears Label.png"
@@ -530,7 +530,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team22"
-        t.TeamName = "lions"
+        t.TeamName = "Detroit"
         t.NickName = "Lions"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Lions Label.png"
@@ -539,7 +539,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team23"
-        t.TeamName = "packers"
+        t.TeamName = "Green Bay"
         t.NickName = "Packers"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Packers Label.png"
@@ -548,7 +548,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team24"
-        t.TeamName = "vikings"
+        t.TeamName = "Minnesota"
         t.NickName = "Vikings"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Vikings Label.png"
@@ -557,7 +557,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team25"
-        t.TeamName = "falcons"
+        t.TeamName = "Atlanta"
         t.NickName = "Falcons"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Falcons Label.png"
@@ -566,7 +566,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team26"
-        t.TeamName = "panthers"
+        t.TeamName = "Carolina"
         t.NickName = "Panthers"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Panthers Label.png"
@@ -575,7 +575,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team27"
-        t.TeamName = "saints"
+        t.TeamName = "New Orleans"
         t.NickName = "Saints"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Saints Label.png"
@@ -584,7 +584,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team28"
-        t.TeamName = "buccaneers"
+        t.TeamName = "Tampa Bay"
         t.NickName = "Buccaneers"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Buccaneers Label.png"
@@ -593,7 +593,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team29"
-        t.TeamName = "cardinals"
+        t.TeamName = "Arizona"
         t.NickName = "Cardinals"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Cardinals Label.png"
@@ -602,7 +602,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team30"
-        t.TeamName = "rams"
+        t.TeamName = "St. Louis"
         t.NickName = "Rams"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Rams Label.png"
@@ -611,7 +611,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team31"
-        t.TeamName = "49ners"
+        t.TeamName = "San Francisco"
         t.NickName = "49ners"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/_49ners Label.png"
@@ -620,7 +620,7 @@ Public Class SeedTeams
 
         t = New Team
         t.TeamId = "team32"
-        t.TeamName = "seahawks"
+        t.TeamName = "Seattle"
         t.NickName = "Seahawks"
         t.Sport = "football"
         t.TeamLabel = "~/NFL ICONS/Seahawks Label.png"

@@ -1399,6 +1399,7 @@ Public Class WeeklyScoringUpdate
                                     dCell2.BackColor = LosingTeamBackColor
                                 End If
                                 dCell2.Font.Bold = True
+
                                 If IsAdminPick Then
                                     dCell2.BackColor = AdminBackColor
                                 End If

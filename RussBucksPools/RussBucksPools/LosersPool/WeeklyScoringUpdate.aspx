@@ -6,8 +6,8 @@
     <br />
   <div id="GameElement1" >
     <asp:Table ID="TeamsByGameTable1" runat="server" GridLines="None" CssClass="Contenders2" CellPadding="-1" CellSpacing="-1">
-        <asp:TableRow Height="15px">
-            <asp:TableHeaderCell ID="Nothing1"  Width="120px"></asp:TableHeaderCell>
+        <asp:TableHeaderRow Height="15px" CssClass="r1">
+            <asp:TableHeaderCell ID="Nothing1"  Width="120px" CssClass="UserName1"></asp:TableHeaderCell>
             <asp:TableHeaderCell Id="GameNumber1" ColumnSpan="2"  Width="30px" ></asp:TableHeaderCell>
             <asp:TableHeaderCell Id="GameNumber2" ColumnSpan="2"  Width="30px"></asp:TableHeaderCell>
             <asp:TableHeaderCell Id="GameNumber3" ColumnSpan="2"  Width="30px"></asp:TableHeaderCell>
@@ -25,9 +25,9 @@
             <asp:TableHeaderCell Id="GameNumber15" ColumnSpan="2"  Width="30px"></asp:TableHeaderCell>
             <asp:TableHeaderCell Id="GameNumber16" ColumnSpan="2"  Width="30px"></asp:TableHeaderCell>
 
-        </asp:TableRow>
-        <asp:TableRow Height="15px">
-            <asp:TableHeaderCell ID="Status1"  Width="120px"></asp:TableHeaderCell>
+        </asp:TableHeaderRow>
+        <asp:TableHeaderRow Height="15px" CssClass="r1">
+            <asp:TableHeaderCell ID="Status1"  Width="120px" CssClass="UserName1"></asp:TableHeaderCell>
             <asp:TableHeaderCell Id="GameNumber1Status" ColumnSpan="2"  Width="30px"></asp:TableHeaderCell>
             <asp:TableHeaderCell Id="GameNumber2Status" ColumnSpan="2"  Width="30px"></asp:TableHeaderCell>
             <asp:TableHeaderCell Id="GameNumber3Status" ColumnSpan="2"  Width="30px"></asp:TableHeaderCell>
@@ -45,9 +45,9 @@
             <asp:TableHeaderCell Id="GameNumber15Status" ColumnSpan="2"  Width="30px"></asp:TableHeaderCell>
             <asp:TableHeaderCell Id="GameNumber16Status" ColumnSpan="2"  Width="30px"></asp:TableHeaderCell>
 
-        </asp:TableRow>
-        <asp:TableRow Height="60px">
-            <asp:TableHeaderCell ID="Nothing1A" Width="120px"></asp:TableHeaderCell> 
+        </asp:TableHeaderRow>
+        <asp:TableHeaderRow Height="60px" CssClass="r1">
+            <asp:TableHeaderCell ID="Nothing1A" Width="120px" CssClass="UserName1"></asp:TableHeaderCell> 
             <asp:TableHeaderCell ID="HomeTeam1Image"  Width="15px"><asp:Image ID="HomeTeam1Image1" runat="server" /></asp:TableHeaderCell>
             <asp:TableHeaderCell ID="AwayTeam1Image"  Width="15px"><asp:Image ID="AwayTeam1Image1" runat="server" /></asp:TableHeaderCell>
             <asp:TableHeaderCell ID="HomeTeam2Image"  Width="15px"><asp:Image ID="HomeTeam2Image1" runat="server" /></asp:TableHeaderCell>
@@ -81,9 +81,9 @@
             <asp:TableHeaderCell ID="HomeTeam16Image"  Width="15px"><asp:Image ID="HomeTeam16Image1" runat="server" /></asp:TableHeaderCell>
             <asp:TableHeaderCell ID="AwayTeam16Image"  Width="15px"><asp:Image ID="AwayTeam16Image1" runat="server" /></asp:TableHeaderCell>
 
-        </asp:TableRow>
-        <asp:TableRow CssClass="IconRow" >
-            <asp:TableHeaderCell ID="Nothing1C" Width="120px"></asp:TableHeaderCell> 
+        </asp:TableHeaderRow>
+        <asp:TableHeaderRow CssClass="IconRow" >
+            <asp:TableHeaderCell ID="Nothing1C" Width="120px" CssClass="UserName1"></asp:TableHeaderCell> 
             <asp:TableHeaderCell ID="HomeTeam1Icon"  Width="15px"><asp:Image ID="HomeTeam1Icon1" runat="server" /></asp:TableHeaderCell>
             <asp:TableHeaderCell ID="AwayTeam1Icon"  Width="15px"><asp:Image ID="AwayTeam1Icon1" runat="server" /></asp:TableHeaderCell>
             <asp:TableHeaderCell ID="HomeTeam2Icon"  Width="15px"><asp:Image ID="HomeTeam2Icon1" runat="server" /></asp:TableHeaderCell>
@@ -117,10 +117,10 @@
             <asp:TableHeaderCell ID="HomeTeam16Icon"  Width="15px"><asp:Image ID="HomeTeam16Icon1" runat="server" /></asp:TableHeaderCell>
             <asp:TableHeaderCell ID="AwayTeam16Icon"  Width="15px"><asp:Image ID="AwayTeam16Icon1" runat="server" /></asp:TableHeaderCell>
 
-        </asp:TableRow>
+        </asp:TableHeaderRow>
 
-        <asp:TableRow Height="15px">
-            <asp:TableCell ID="Nothing1B" Width="120px"></asp:TableCell>
+        <asp:TableRow Height="15px" CssClass="r1">
+            <asp:TableCell ID="Nothing1B" Width="120px" CssClass="UserName1"></asp:TableCell>
             <asp:TableCell ID="HomeScore1"  Width="15px"></asp:TableCell>
             <asp:TableCell ID="AwayScore1"  Width="15px"></asp:TableCell>
             <asp:TableCell ID="HomeScore2"  Width="15px"></asp:TableCell>
@@ -162,10 +162,13 @@
  <asp:Button ID="Button1" runat="server" Height="35px" Text="Return" Width="120px"/>
 <style type="text/css" >
         .Contenders2 {  border-collapse: collapse; }
-        .Contenders2 > tbody > tr > th,   
-        .Contenders2 > tbody > tr > td { border: 1px ridge black; max-width:23px ; text-align:center;font-size:9px;  }
+        .Contenders2 > tbody > .r1 > th,   
+        .Contenders2 > tbody > .r1 > td { border: 1px ridge black; max-width:23px ; text-align:center;font-size:7px;  }
         .Contenders2 > tbody > .IconRow { max-height:15px}
-        .UserName1 { min-width:120px;}
+        .Contenders2 > tbody > .IconRow > th {border: 1px ridge black; max-width:23px;text-align:center;font-size:7px;}
+        .Contenders2 > tbody > .dRow1 > td {border: 1px ridge black;  font-size:7px;text-align:center;}
+        .UserName1 {border: 1px ridge black; min-width:120px; font-size:7px;text-align:center;}
+        
 </style>
   
 </asp:Content>
